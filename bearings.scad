@@ -5,7 +5,7 @@ module bearing(id, od, wd, mcmaster, series, labels=false){
         color("grey")cylinder(d=od,h=wd, center=true);
         color("white")cylinder(d=id,h=wd+1, center=true);  
         if($preview && labels){
-            bearing_lettering(id, od, wd, mcmaster, series);    
+            bearing_lettering(id, od, wd, mcmaster, series);
         }
     }
 }
@@ -101,7 +101,7 @@ module bearing_16100(labels=true){ bearing(10,28,8,"5972K223","16100", labels=la
 module bearing_16101(labels=true){ bearing(12,30,8,"5972K224","16101", labels=labels); }
 
 translate([0,0,0])
-{   
+{
     bearing_6800();
     bearing_6804();
     bearing_6907();
@@ -111,7 +111,7 @@ translate([0,0,0])
 
 
 translate([0,60,0])
-{   
+{
     bearing_6800(labels=false);
     bearing_6804(labels=false);
     bearing_6907(labels=false);
