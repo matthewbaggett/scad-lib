@@ -1,4 +1,5 @@
-$fn=360;
+$fn=$preview ? 60 : 360;
+include <../Lib/bearings.scad>;
 include <../Lib/mirrorcopy.scad>;
 include <../Lib/extrusion.scad>;
 include <../Lib/pcd.scad>;
