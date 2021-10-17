@@ -6,7 +6,7 @@ module doubleExtrusion(width,length, center=false){
         translate([0,(width - extraWallWidth)/2,length/2])
         cube([center?0:width/2,extraWallWidth,length], center=true);
     }
-    
+
     translate([(width/2),0,0])
     children();
     translate([(width/2)*-1,0,0])
@@ -44,17 +44,17 @@ module extrusion_sub(length=10, outer=40, tSlot=8, gusset=4.5, bore=7, center=fa
                         }
                     }
                 }
-                
+
                 // Crossbar
                 mirrorCopy(){
                     rotate(45)
                     cube([outer*1.3, gusset, length], center=true);
                 }
-                
+
                 // Core
                 cube([bore*2,bore*2,length], center=true);
             };
-            
+
             union(){
                 // Tappable Bore
                 cylinder(d=bore, h=length+2, center=true);
