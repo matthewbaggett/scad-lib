@@ -1,8 +1,15 @@
 $fn=$preview ? 60 : 360;
 include <../Lib/bearings.scad>;
 include <../Lib/mirrorcopy.scad>;
+include <../Lib/part_splitter.scad>;
 include <../Lib/extrusion.scad>;
+include <../Lib/hollower.scad>;
 include <../Lib/pcd.scad>;
 include <../Lib/metric_bolts.scad>;
+include <../Lib/steppers.scad>;
 include <../Lib/corner_radiuser.scad>;
+include <../Lib/gears.scad>;
+include <../Lib/prism.scad>;
+include <../Lib/fillet_cylinder.scad>;
+include <../Lib/o-ring.scad>;
 include <../Lib/hexgrid.scad>;
